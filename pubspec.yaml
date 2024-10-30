@@ -30,7 +30,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  vidvliveness_flutter_plugin: ^0.0.2  # Update with the correct version
+  vidvliveness_flutter_plugin: ^1.0.0  # Update with the correct version
   vidvocr_flutter_plugin: ^0.0.1
 
 

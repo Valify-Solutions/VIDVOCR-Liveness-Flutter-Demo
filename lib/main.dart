@@ -130,33 +130,33 @@ class _MyAppState extends State<MyApp> {
       switch (parsedResult['state']) {
         case 'SUCCESS':
           setState(() {
-            _LivenessResult = 'Liveness success! Result: ${parsedResult['livenessResult']}';
+            _ocrResult = '_ocrResult success! Result: ${parsedResult['ocrResult']}';
           });
           break;
         case 'ERROR':
           setState(() {
-            _LivenessResult = 'Error occurred: ${parsedResult['errorCode']} - ${parsedResult['errorMessage']}';
+            _ocrResult = 'Error occurred: ${parsedResult['errorCode']} - ${parsedResult['errorMessage']}';
           });
           break;
         case 'FAILURE':
           setState(() {
-            _LivenessResult = 'Service failed. Error code: ${parsedResult['errorCode']} - ${parsedResult['errorMessage']}';
+            _ocrResult = 'Service failed. Error code: ${parsedResult['errorCode']} - ${parsedResult['errorMessage']}';
           });
           break;
         case 'EXIT':
           setState(() {
-            _LivenessResult = 'User exited at step: ${parsedResult['step']}';
+            _ocrResult = 'User exited at step: ${parsedResult['step']}';
           });
           break;
         default:
           setState(() {
-            _LivenessResult = 'Unhandled response: $parsedResult';
+            _ocrResult = 'Unhandled response: $parsedResult';
           });
           break;
       }
     } catch (e) {
       setState(() {
-        _LivenessResult = 'Error: $e';
+        _ocrResult = 'Error: $e';
       });
     }
   }

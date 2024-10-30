@@ -244,10 +244,10 @@ packages:
     dependency: "direct main"
     description:
       name: vidvliveness_flutter_plugin
-      sha256: "20629b1d536c8d94a0787565da0f2b4419db6a4350fdf3d6320df60c7669a5d1"
+      sha256: "0fa15ab37771402353e5d3eb7ae56f26fd44b9eac0e221ce75a94d48196ed262"
       url: "https://pub.dev"
     source: hosted
-    version: "0.0.2"
+    version: "1.0.0"
   vidvocr_flutter_plugin:
     dependency: "direct main"
     description:
